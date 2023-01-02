@@ -3,13 +3,49 @@ import {
   CodeSurferColumns,
   Step,
 } from "code-surfer";
+import { Image, Notes, Head } from "mdx-deck";
 import { github, vsDark } from "@code-surfer/themes";
+
+import motivation from "./motivation.png";
+import typings from "./typings.png";
+import schema from "./scehma.png";
 
 export const theme = vsDark;
 
-# Hello 👋
+# Introduce to [Zod](https://github.com/colinhacks/zod) 👋
 
-You are using [MDX Deck](https://github.com/jxnblk/mdx-deck) and [Code Surfer](https://codesurfer.pomb.us)
+TypeScript-first schema validation with static type inference
+
+Zhentian Wan @ Zscaler
+
+---
+
+# Content
+
+- Motivation
+
+- How Zod can help?
+
+- Example
+
+- What's more?
+
+- Limitation
+
+---
+
+## Motivation
+
+<Image
+  src={typings}
+  style={{
+    width: "40vw",
+    height: "80vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+/>
 
 ---
 
@@ -103,7 +139,7 @@ function incididunt(ipsum, ut = 1) {
 <Step>
 
 ```js
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
+const magna = (aliqua) => aliqua.ut((enim, ad) => enim, 0);
 ```
 
 ```js
@@ -125,7 +161,7 @@ const lorem = (ipsum, dolor, sit) => {
   );
 };
 
-const magna = aliqua => aliqua.ut((enim, ad) => enim, 0);
+const magna = (aliqua) => aliqua.ut((enim, ad) => enim, 0);
 ```
 
 ```js
